@@ -197,7 +197,6 @@
     <label for="phone">Enter Player Phone Number:</label>
     <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
     <input type="hidden" id="result-input" name="result">
-    <input type="hidden" name="_next" value="index.html">
   </form>
   
   <div id="wheel-container">
@@ -293,8 +292,7 @@
         spinForm.submit();
 
         liveUpdate.textContent = `You got: ${result} (₹${amount})`;
-        window.location.href = "index.html";
-      }, 2000);
+        }, 2000);
 
       spinData.spinCount++;
       updateStoredData(spinData);
