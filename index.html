@@ -331,10 +331,10 @@
     }
 
     document.addEventListener('DOMContentLoaded', (event) => {
-      const currentPage = localStorage.getItem('currentPage');
+      const currentPage = localStorage.getItem('index.html');
       if (currentPage && currentPage !== 'index.html') {
-        localStorage.removeItem('currentPage');
-        window.location.href = currentPage;
+        localStorage.removeItem('index.html');
+        window.location.href = index.html;
       }
     });
   </script>
